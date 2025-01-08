@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --navbar-height: 106px;
+}
+
+
+@layer utilities{
+  /* ===== TYPOGRAPHY */
+ .h1 {
+   @apply text-[34px] leading-[42px] font-bold text-brand-100;
+ }
+ .h2 {
+   @apply text-[24px] leading-[36px] font-bold text-brand-100;
+ }
+ .h3 {
+   @apply text-[20px] leading-[28px] font-semibold text-brand-100;
+ }
+ .h4 {
+   @apply text-[18px] leading-[20px] font-medium;
+ }
+ .h5 {
+   @apply text-[16px] leading-[24px] font-semibold;
+ }
+ .subtitle-1 {
+   @apply text-[16px] leading-[24px] font-medium;
+ }
+ .subtitle-2 {
+   @apply text-[14px] leading-[20px] font-semibold;
+ }
+ .body-1 {
+   @apply text-[16px] leading-[24px] font-normal;
+ }
+ .body-2 {
+   @apply text-[14px] leading-[20px] font-normal;
+ }
+ .button {
+   @apply text-[14px] leading-[20px] font-medium;
+ }
+ .caption {
+   @apply text-[12px] leading-[16px] font-normal;
+ }
+ .overline {
+   @apply text-[10px] leading-[14px] font-normal;
+ }
+}
+
+.line {
+ background-color: rgba(177, 45, 45, 0.3);
+ width: 100%;
+ height: 0.1rem;
+}
+
+
+
+.hero{
+  height: calc(100dvh - var(--navbar-height));
+}
+
+@media(max-height: 1023px){
+  .hero{
+height: 100%;
+  }
+}
+
+
+.slide-img{
+  transition: translate 300ms ease-in-out;
+  flex-grow: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+
+.dotStyle{
+  transition: scale 100ms ease-in-out;
+}
+
+.dotStyle:hover{
+  scale: 1.2;
+}
+
+@keyframes squish {
+  50% {
+    scale: 1.4 0.6;
+  }
+}
+
+.btn {
+  @apply mt-4 inline-block text-[1.2rem] text-[#880808] bg-transparent border-[0.14rem] border-[#880808] cursor-pointer py-3 px-12 
+         hover:bg-[#880808] hover:text-white hover:transition-all hover:duration-1000;
+}
