@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React from 'react'
+import { motion } from "motion/react"
 import { TypeAnimation } from 'react-type-animation';
 
 const Services = () => {
@@ -27,8 +28,14 @@ const Services = () => {
         }
       ];
   return (
-    <>
-    <h2 className='h2'>Our Services</h2>
+    <div className='overflow-x-hidden'>
+    <motion.h2 
+        className='h2'
+        initial={{x:100}}
+        whileInView={{x:[300, 4]}}
+        transition={{duration:2}}
+        >Our Services
+        </motion.h2>
     <div className="line" />
     <section className='p-4'>
     <TypeAnimation
@@ -54,18 +61,24 @@ const Services = () => {
         <div className="cards-container flex flex-col lg:flex-row justify-center gap-8 py-6 px-10">
             {
                 servicesData.map((service, index)=> (
-                    <div key={index} className="cards flex flex-col gap-1 text-justify bg-red-200 p-6 rounded-xl">
+                    <motion.div 
+                        key={index} 
+                        className="cards flex flex-col gap-1 text-justify bg-red-200 p-6 rounded-xl overflow-y-hidden"
+                        initial={{y: 100}}
+                        whileInView={{y:[100, 0]}}
+                        transition={{duration: 2}}
+                        >
                           <h3 className='h3'>{service.title}</h3>
                     <p className='text-[14.5px]'>{service.description}</p>
                 <Link href='/' className='link text-brand' 
                   aria-label={`Learn more about ${service.title}`}>
                     See how it works</Link>
-                    </div>
+                    </motion.div>
                 ))
             }
         </div>
     </section>
-    </>
+    </div>
   )
 }
 
