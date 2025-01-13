@@ -28,7 +28,7 @@ const Services = () => {
         }
       ];
   return (
-    <div className='overflow-x-hidden flex flex-col justify-center items-center mb-28'>
+    <div className='overflow-hidden flex flex-col justify-center items-center mb-28'>
     <motion.h2 
         className='h2'
         initial={{x:100}}

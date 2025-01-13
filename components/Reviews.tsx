@@ -35,9 +35,9 @@ const Reviews = () => {
 }
 ]
   return (
-    <section className='border-red-200 border-[1px] h-[18rem] '>
-        <div className="review-container flex items-center h-full ">
-            <div className="describe border-r-[1px] border-red-200  w-[50%] h-full">
+    <section className='border-red-200 border-[1px]  '>
+        <div className="review-container flex flex-col lg:flex-row items-center h-full  ">
+            <div className="describe border-r-[1px] border-red-200  w-full lg:w-[50%] h-full">
                 <div className="contain flex flex-col justify-center items-center p-8 gap-4">
                 <h2 className='h2 self-start'>Don't just take our word for it</h2>
                 <p>Our clients investors are at the heart of what we do – and their feedback speaks 
@@ -57,7 +57,7 @@ const Reviews = () => {
               pagination={{
                 clickable: true,
               }}
-              className='w-[50%] h-full'
+              className=' w-full lg:w-[50%] h-full'
           >
               
             {

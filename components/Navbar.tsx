@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   
 
-  const links = ['About', 'Contact', 'Products'];
+  const links = ['About', 'Contact', 'Listings'];
 
   return (
     <nav className="bg-white sticky top-0 z-50 w-full">
