@@ -28,11 +28,11 @@ const Services = () => {
         }
       ];
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden flex flex-col justify-center items-center mb-28'>
     <motion.h2 
         className='h2'
         initial={{x:100}}
-        whileInView={{x:[300, 4]}}
+          whileInView={{x:[200, 4]}}
         transition={{duration:2}}
         >Our Services
         </motion.h2>

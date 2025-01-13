@@ -31,10 +31,10 @@ const Portfolio = () => {
     }
   ];
   return (
-    <section className='mt-40'>
+    <section className='overflow-hidden flex flex-col justify-center items-center'>
          <motion.h2 
           initial={{x:100}}
-          whileInView={{x:[300, 4]}}
+          whileInView={{x:[200, 4]}}
           transition={{duration:2}}
           className="service-head h2">Portfolio</motion.h2>
       <div
