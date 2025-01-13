@@ -9,7 +9,7 @@ const activeDotStyle = "bg-red-600";
 
 // Define types for props
 interface CustomSliderProps {
-  items: StaticImageData[]; // Array of image URLs
+  items: StaticImageData[] ; // Array of image URLs
   width: number;
   height: number;
   slideImgClass?: string;

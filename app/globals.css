@@ -94,3 +94,11 @@ height: 100%;
   @apply mt-4 inline-block text-[1.2rem] text-[#880808] bg-transparent border-[0.14rem] border-[#880808] cursor-pointer py-3 px-12 
          hover:bg-[#880808] hover:text-white hover:transition-all hover:duration-1000;
 }
+
+.swipe{
+  @apply flex !important
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #99272d !important;
+}
