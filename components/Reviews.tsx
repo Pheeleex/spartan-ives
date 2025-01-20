@@ -35,7 +35,7 @@ const Reviews = () => {
 }
 ]
   return (
-    <section className='border-red-200 border-[1px]  '>
+    <section className='border-red-200 border-[1px] h-full lg:h-[16rem]'>
         <div className="review-container flex flex-col lg:flex-row items-center h-full  ">
             <div className="describe border-r-[1px] border-red-200  w-full lg:w-[50%] h-full">
                 <div className="contain flex flex-col justify-center items-center p-8 gap-4">
