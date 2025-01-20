@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, FC } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 const dotsContainerStyles = "absolute bottom-5 w-full flex justify-center";
 const dotStyle = "mx-1 cursor-pointer w-2 h-2 rounded-full bg-gray-400";
@@ -9,7 +9,7 @@ const activeDotStyle = "bg-red-600";
 
 // Define types for props
 interface CustomSliderProps {
-  items: StaticImageData[] ; // Array of image URLs
+  items: string[] ; // Array of image URLs
   width: number;
   height: number;
   slideImgClass?: string;

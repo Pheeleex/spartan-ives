@@ -6,7 +6,8 @@ import { Build1, Build2, Build4 } from "@/consants";
 
 
 const Hero = () => {
-    const contentImages = [Build1,Build2, Build4];   
+    // Convert StaticImageData objects to strings (URLs)
+    const contentImages = [Build1, Build2, Build4].map(image => image.src);   
     return (
         <section className="hero mt-4 mb-12" aria-labelledby="hero-heading">
             <div className="flex flex-col lg:flex-row h-full justify-start gap-[8%] items-center p-4">
@@ -32,7 +33,7 @@ const Hero = () => {
                 {/* Image side */}
                 <div className="flex justify-center items-center w-full h-[400px] lg:w-1/2 p-4 lg:p-6 rounded-md">
                     <CustomSlider
-                        items={contentImages}
+                        items={contentImages } 
                         slideImgClass='rounded-lg h-full'
                         largeCont='rounded-lg h-full'
                         slideContClass='rounded-lg h-full'
