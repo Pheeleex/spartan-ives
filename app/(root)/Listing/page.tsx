@@ -24,8 +24,7 @@ const page = async() => {
         {
             listings?.map((listing, index)=> (
                 <div key={index} className='flex flex-col w-[25rem] h-[25rem] rounded-lg border-[1px] border-red-200'>
-                    <CustomSlider
-                    //@ts-ignore 
+                    <CustomSlider 
                         items={listing.images}
                         width={400}
                         height={400}
